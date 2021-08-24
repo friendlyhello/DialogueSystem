@@ -8,3 +8,6 @@ DialogueSystem/Library/StateCache/MainStageHierarchy
 DialogueSystem/ProjectSettings/
 DialogueSystem/Library/ScriptAssemblies/
 DialogueSystem/Library/
+DialogueSystem/Logs/
+DialogueSystem/DialogueSystem.sln
+DialogueSystem/UnityEditor.UI.csproj
