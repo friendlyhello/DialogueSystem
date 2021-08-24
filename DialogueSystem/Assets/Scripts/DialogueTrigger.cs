@@ -5,13 +5,13 @@ using UnityEngine;
 // (!) This is a template that can also be reused with different data each time
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue[] dialogue;
+    public DialogueEntry[] dialogueEntries;
     public Actor[] actors;
 }
 
 // Class that stores info about the dialogue
 [System.Serializable]
-public class Dialogue
+public class DialogueEntry
 {
     // Two fields each dialogue should consist of
     public int actorId;
