@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    // (!) The Dialogue Manager is in charge of:
+    //      - Opening and closing dialogue box
+    //      - Displaying the correct text
+    
+    
 }
