@@ -348,6 +348,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a126392eaab4d07994d2139d11f7b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueEntries:
+  - actorId: 0
+    dialogueText: 
+  - actorId: 0
+    dialogueText: 
+  - actorId: 0
+    dialogueText: 
+  - actorId: 0
+    dialogueText: 
+  actors:
+  - actorName: 
+    actorSprite: {fileID: 0}
+  - actorName: 
+    actorSprite: {fileID: 0}
+  - actorName: 
+    actorSprite: {fileID: 0}
+  - actorName: 
+    actorSprite: {fileID: 0}
 --- !u!114 &836172981
 MonoBehaviour:
   m_ObjectHideFlags: 0
