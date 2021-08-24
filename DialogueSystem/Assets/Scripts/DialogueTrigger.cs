@@ -2,30 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// (!) This is a template that can also be reused with different data each time
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue[] Dialogues;
-    public Actor[] Actors;
+    public Dialogue[] dialogue;
+    public Actor[] actors;
 }
 
 // Class that stores info about the dialogue
 [System.Serializable]
 public class Dialogue
 {
-    // Two fields each message should consist of
+    // Two fields each dialogue should consist of
     public int actorId;
-    public string dialogue;
+    public string dialogueText;
 }
 
 // Class that stores info about the Actor and its portrait
 [System.Serializable]
 public class Actor
 {
-    public string name;
-    public Sprite sprite;
+    public string actorName;
+    public Sprite actorSprite;
 }
 
-// (!) This is a template that can also be reused with different data each time
 
 
 
