@@ -7,6 +7,12 @@ public class DialogueTrigger : MonoBehaviour
 {
     public DialogueEntry[] dialogueEntries;
     public Actor[] actors;
+    
+    // Start the dialogue exchange!
+    public void StartDialogue()
+    {
+        FindObjectOfType<DialogueManager>().OpenDialogue(dialogueEntries, actors);
+    }
 }
 
 // Class that stores info about the dialogue
