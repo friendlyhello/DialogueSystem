@@ -37,8 +37,8 @@ public class Actor
     
 // Dialogue Trigger holds TWO types of information:
 //  1. Messages:
-//      - A list of messages (in hierarchical order ex. 0 - 3)
-//        with an actor ID
+//      - A list of dialogue messages with an
+//        actor ID
 //      - Actors taking part in the conversation
 //  2. Actors:
 //      - The name of the actor
