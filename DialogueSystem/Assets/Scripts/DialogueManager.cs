@@ -15,7 +15,7 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public RectTransform dialogueBoxBg;
 
-    // Variables for Actors and Dialogue messages in the -currently active- dialogue session
+    // Variables for Actors and Dialogue in the -currently active- dialogue session
     public DialogueEntry[] currentDialogueEntries;
     public Actor[] currentActors;
 
@@ -34,7 +34,22 @@ public class DialogueManager : MonoBehaviour
         currentActors = actors;
         activeDialogueCount = 0;
         
-        Debug.Log("Started conversation! Loaded dialogue: " + dialogueEntries.Length);  
+        Debug.Log("Started conversation! Loaded dialogue: " + dialogueEntries.Length);
+        
+        DisplayDialogue();
+    }
 
+    public void DisplayDialogue()
+    {
+        DialogueEntry dialogueToDisplay = currentDialogueEntries[activeDialogueCount];
+        
+        // Assign dialogueToDisplay to UI
+        dialogueText.text = dialogueToDisplay.dialogueText;
+
+        Actor actorToDisplay = currentActors[dialogueToDisplay.actorId];
+        
+        // Assign actor name and sprite to UI
+        actorName.text = actorToDisplay.actorName;
+        actorImage.sprite = actorToDisplay.actorSprite;
     }
 }

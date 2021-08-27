@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// (!) This is a template that can also be reused with different data each time
+// (!) This is a template that can also be reused with different data, on
+//     different game objects, each time!
+
 public class DialogueTrigger : MonoBehaviour
 {
     public DialogueEntry[] dialogueEntries;
