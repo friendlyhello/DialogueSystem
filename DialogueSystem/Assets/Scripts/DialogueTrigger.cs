@@ -44,7 +44,7 @@ public class Actor
 //      - Holds unique/separate data for every NPC (or button!)
     
 // Dialogue Trigger holds TWO types of information:
-//  1. Messages:
+//  1. Dialogue Messages:
 //      - A list of dialogue messages with an
 //        actor ID
 //      - Actors taking part in the conversation

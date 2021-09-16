@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -21,6 +22,9 @@ public class DialogueManager : MonoBehaviour
 
     // Count current message progress
     private int activeDialogueCount = 0;
+
+    public static bool isActive = false;
+    
     
     //** NOW COMES THE MAGIC */
     // Method to get Actors and Dialogue Entries from DialogueTrigger.cs that will display
@@ -33,6 +37,8 @@ public class DialogueManager : MonoBehaviour
         currentDialogueEntries = dialogueEntries;
         currentActors = actors;
         activeDialogueCount = 0;
+
+        isActive = true;
         
         Debug.Log("Started conversation! Loaded dialogue: " + dialogueEntries.Length);
         
@@ -51,5 +57,29 @@ public class DialogueManager : MonoBehaviour
         // Assign actor name and sprite to UI
         actorName.text = actorToDisplay.actorName;
         actorImage.sprite = actorToDisplay.actorSprite;
+    }
+
+    public void NextDialogueEntry()
+    {
+        activeDialogueCount++;
+        
+        // Don't go out of bounds of the DialogueEntries array
+        if (activeDialogueCount < currentDialogueEntries.Length)
+        {
+            DisplayDialogue();
+        }
+        else
+        {
+            Debug.Log("Conversation Over!");
+            isActive = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isActive == true)
+        {
+            NextDialogueEntry();
+        }
     }
 }
