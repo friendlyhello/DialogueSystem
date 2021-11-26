@@ -11,3 +11,4 @@ DialogueSystem/Library/
 DialogueSystem/Logs/
 DialogueSystem/DialogueSystem.sln
 DialogueSystem/UnityEditor.UI.csproj
+.DS_Store
